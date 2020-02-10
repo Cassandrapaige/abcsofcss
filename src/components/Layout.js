@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
 import Nav from './Nav'
 import MainNav from './MainNav.js'
 import Header from './Header'

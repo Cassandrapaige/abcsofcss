@@ -1,5 +1,5 @@
 import React, { Fragment, Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 
 import './App.scss';
 import Aa from './components/layouts/Aa'
@@ -30,20 +30,24 @@ import Yy from './components/layouts/Yy'
 import Zz from './components/layouts/Zz'
 
 class App extends Component {
+  state = {
+    location: '/'
+  }
+
   render() {
-    const repeat = (elem) => {
-      let el = elem.repeat(2);
-      let [x, y] = [el[0].toUpperCase(),el[1]];
-      return `${x}${y}`;
+
+  const repeat = (elem) => {
+    let el = elem.repeat(2);
+    let [x, y] = [el[0].toUpperCase(),el[1]];
+    return `${x}${y}`;
   }
       
   const onKeypress = (e) => {
-    console.log(e.key);
       if(e.key.length < 2 && /[a-zA-Z]/.test(e.key)) {
-      window.location = `/${(repeat(e.key))}`
-      }
-      else {
-        window.location = '/'
+      let location = `/${(repeat(e.key))}`;
+       this.setState({
+         location: location
+       })
       }
   };
       
@@ -51,7 +55,8 @@ class App extends Component {
   return (
       <Router>
           <Fragment>
-          <div className="container">
+          <div className="container"> 
+          <Redirect to = {this.state.location} />
         <Switch>
           <Route exact path= '/' component = { Aa }/>
           <Route exact path= '/Aa' component = { Aa }/>
@@ -81,6 +86,7 @@ class App extends Component {
           <Route exact path= '/Yy' component = { Yy }/>
           <Route exact path= '/Zz' component = { Zz }/>
         </Switch>
+            
         </div>
         </Fragment>
     </Router>
