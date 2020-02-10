@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Ss = () => {
     return (
@@ -8,8 +8,8 @@ const Ss = () => {
             <Layout
             letter = 'Ss'
 
-            primary = '#FE6B6B'
-            secondary = '#4ECDC4'
+            primary = '#4ECDC4'
+            secondary = '#FE6B6B'
             complimentary = '#556370'
             contrast = '#C54D57'
 
@@ -17,10 +17,10 @@ const Ss = () => {
             fontstyle= 'normal'
             weight= '700'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = 'section {'
+            method = 'transform: skewY(12deg); }'
+            link = 'https://codepen.io/cassandraPaige/pen/jOEKEOq'
+            exp = 'Use skew() to distort an element by changing the direction of its angles, both horizontally and vertically. Here we have used skew() to create a slanted background effect on the footer element. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

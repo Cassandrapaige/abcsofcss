@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Nn = () => {
     return (
@@ -17,10 +17,10 @@ const Nn = () => {
             fontstyle= 'normal'
             weight= '700'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = '.card {'
+            method = 'clip-path: polygon(0 0, 0% 100%, 100% 0); }'
+            link = 'https://codepen.io/cassandraPaige/pen/abzGaZG'
+            exp = 'Clip path is used for creating shapes, by specifying individual point positions along the X and Y axis. You can use it to clip an image or element, so that only the clipped portion of the element will be visible. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

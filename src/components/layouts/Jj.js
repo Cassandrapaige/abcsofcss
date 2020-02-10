@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Jj = () => {
     return (
@@ -17,10 +17,10 @@ const Jj = () => {
             fontstyle= 'normal'
             weight= '400'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = '.section {'
+            method = ' background: linear-gradient(); }'
+            link = 'https://codepen.io/cassandraPaige/pen/OJPMyQQ'
+            exp = 'By default, a linear-gradient creates a background image consiting of a smooth transition between 2 or more colours, along a straight line. You can specify the direction that you wish your gradient to go in, as well as colour-stops, to create a more unique background image. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Ll = () => {
     return (
@@ -8,19 +8,19 @@ const Ll = () => {
             <Layout
             letter = 'Ll'
 
-            primary = '#F2C641'
-            secondary = '#D94A4A'
-            complimentary = '#208C6E'
-            contrast = '#84BFBF'
+            primary = '#F2AF5C'
+            secondary = '#A6335D'
+            complimentary = '#025E73'
+            contrast = '#F2836B'
 
             family = 'latex, sans-serif'
             fontstyle= 'normal'
             weight= '400'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = 'img {'
+            method = 'filter: hue-rotate(90deg); }'
+            link = 'https://codepen.io/cassandraPaige/pen/Poweyve'
+            exp = 'Similar to the effects found on Photoshop, CSS filters allow you to manipulate images by adding filters such as blur, hue or grayscale. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

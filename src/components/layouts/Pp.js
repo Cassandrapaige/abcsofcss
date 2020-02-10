@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Pp = () => {
     return (
@@ -8,19 +8,19 @@ const Pp = () => {
             <Layout
             letter = 'Pp'
 
-            primary = '#D64776'
-            secondary = '#6A5385'
-            complimentary = '#45556B'
-            contrast = '#4D8A77'
+            primary = '#C3D9A3'
+            secondary = '#D94179'
+            complimentary = '#011C40'
+            contrast = '#D9779B'
 
             family = 'aralucent, sans-serif'
             fontstyle= 'normal'
             weight= '400'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = 'input:focus {'
+            method = 'outline: 2px solid #4D8A77; }'
+            link = 'https://codepen.io/cassandraPaige/pen/QWwrZxZ'
+            exp = 'The :focus pseudo-class is used on form elements to apply styles when a user clicks on an input field. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

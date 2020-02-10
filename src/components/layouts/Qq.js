@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Qq = () => {
     return (
@@ -8,19 +8,19 @@ const Qq = () => {
             <Layout
             letter = 'Qq'
 
-            primary = '#FFBD2B'
-            secondary = '#FF573A'
-            complimentary = '#6394FF'
+            primary = '#FF573A'
+            secondary = '#6394FF'
+            complimentary = '#FFBD2B'
             contrast = '#1F3340'
 
             family = 'quiche-sans, sans-serif'
             fontstyle= 'normal'
             weight= '800'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = 'h1 {'
+            method = '-webkit-text-stroke: 4px #FF573A; }'
+            link = 'https://codepen.io/cassandraPaige/pen/povxWre'
+            exp = 'The text-stroke property allows you to change the width and color of the texts stroke effect. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

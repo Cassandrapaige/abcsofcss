@@ -1,11 +1,7 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect, Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import './App.scss';
-import LayoutNav from './components/boilerplates/LayoutNav';
-import Homepage from './components/homepage/Homepage';
-
-
 import Aa from './components/layouts/Aa'
 import Bb from './components/layouts/Bb'
 import Cc from './components/layouts/Cc'
@@ -33,14 +29,31 @@ import Xx from './components/layouts/Xx'
 import Yy from './components/layouts/Yy'
 import Zz from './components/layouts/Zz'
 
-const App = () => {
+class App extends Component {
+  render() {
+    const repeat = (elem) => {
+      let el = elem.repeat(2);
+      let [x, y] = [el[0].toUpperCase(),el[1]];
+      return `${x}${y}`;
+  }
+      
+  const onKeypress = (e) => {
+    console.log(e.key);
+      if(e.key.length < 2 && /[a-zA-Z]/.test(e.key)) {
+      window.location = `/${(repeat(e.key))}`
+      }
+      else {
+        window.location = '/'
+      }
+  };
+      
+  window.addEventListener('keypress', onKeypress);
   return (
       <Router>
           <Fragment>
           <div className="container">
         <Switch>
-          <Route exact path= '/' component = { Homepage }/>
-          <Route exact path= '/layout-nav' component = { LayoutNav }/>
+          <Route exact path= '/' component = { Aa }/>
           <Route exact path= '/Aa' component = { Aa }/>
           <Route exact path= '/Bb' component = { Bb }/>
           <Route exact path= '/Cc' component = { Cc }/>
@@ -72,6 +85,7 @@ const App = () => {
         </Fragment>
     </Router>
   );
+}
 }
 
 export default App;

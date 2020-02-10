@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Bb = () => {
     return (
@@ -8,8 +8,8 @@ const Bb = () => {
             <Layout
             letter = 'Bb'
 
-            primary = '#F29F05'
-            secondary = '#F23D5E'
+            primary = '#F23D5E'
+            secondary = '#F29F05'
             complimentary = '#ADBF69'
             contrast = '#F22233'
 
@@ -17,9 +17,10 @@ const Bb = () => {
             fontstyle= 'normal'
             weight= '300'
 
-            selector = 'CONIC-GRADIENT'
-            method = 'A conic gradient is similar to a radial gradient. Both are circular and use the center of the element as the source point for color stops. However, where the color stops of a radial gradient emerge from the center of the circle, a conic gradient places them around the circle.'
-            link = 'https://codepen.io/cassandraPaige/pen/OJPjzWr?editors=1100'
+            selector = '.container {'
+            method = 'overflow: hidden; }'
+            link = 'https://codepen.io/cassandraPaige/pen/MWYPQmm'
+            exp= 'The overflow property determines what happens if an elements content is larger than its container element. Try removing overflow: hidden from the example, and notice how the car is no longer contained within its own container. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

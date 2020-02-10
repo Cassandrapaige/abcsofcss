@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Oo = () => {
     return (
@@ -8,19 +8,19 @@ const Oo = () => {
             <Layout
             letter = 'Oo'
 
-            primary = '#9DD973'
-            secondary = '#F26B83'
-            complimentary = '#F2E966'
-            contrast = '#F2B05E'
+            primary = '#6CD9CE'
+            secondary = '#D93BA1'
+            complimentary = '#2E2473'
+            contrast = '#0AA66D'
 
             family = 'opake, sans-serif'
             fontstyle= 'normal'
             weight= '900'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = 'h1 {'
+            method = 'mix-blend-mode: screen; }'
+            link = 'https://codepen.io/cassandraPaige/pen/jOEMMyp'
+            exp = 'Use mix-blend-mode to define how various elements should blend with their backgrounds. Explore using different values to see how each one creates a different effect/ colour combination. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

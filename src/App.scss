@@ -4,16 +4,20 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: titling-gothic-fb, sans-serif;
   font-style: normal;
   cursor: default;
+
+}
+
+body {
+  font-family: titling-gothic-fb, sans-serif;
 }
 
 .nav {
-  position: fixed;
+  position: relative;
   background-color: #fff;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
   padding: 20px 50px;
   border-bottom: .5px solid black;
   -webkit-box-shadow: 0 3px 4px -6px #000;
@@ -61,33 +65,6 @@
   font-weight: 700;
 }
 
-/* HEADER */
-
-.right_content {
-  .inner {
-    img {
-      width: 40%;
-    }
-  }
-}
-
-@keyframes moveUp {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  50% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
 header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -124,7 +101,7 @@ header {
   }
   
   #cssTip .exp {
-    font-size: .5em;
+    font-size: .6em;
     margin-top: 50px;
     padding: 50px;
     width: 100vw;
@@ -134,10 +111,7 @@ header {
     font-style: normal;
   }
   
-  .method {
-    font-weight: 200;
-    font-size: 18px;
-    line-height: 27px;
+  #cssTip .method {
     width: 80%;
     text-align: center;
   }
@@ -170,11 +144,11 @@ header {
   #colors h2 {
     grid-column: 1/-1;
     font-size: 3em;
+    color: #333;
   }
   
   #colors .color_item {
     position: relative;
-    cursor: copy;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -189,15 +163,7 @@ header {
     height: 200px;
     font-weight: 700;
   }
-  
-  #colors .color_item:hover::before {
-    content: 'click to copy to clipboard';
-    position: absolute;
-    text-align: center;
-    top: 25%;
-    font-size: .3em;
-  }
-  
+
   #fonts {
     min-height: 100vh;
     margin-top: 100px;
@@ -215,57 +181,107 @@ header {
     border-bottom: 3px solid #333;
     border-top: 3px solid #333;
   }
-  
-  // #fonts .select {
-  //   position: relative;
-  //   cursor: copy;
-  // }
-  
-  // #fonts .select:hover::before {
-  //   content: 'click to copy to clipboard';
-  //   position: absolute;
-  //   right: 0;
-  //   bottom: 80px;
-  //   font-size: 12px;
-  //   color: #fff;
-  // }
+
+  .navigation {
+    padding: 100px 0;
+    transform: translateY(-1000px);
+    transition: all .5s ease;
+  }
+
+  .nav_slideIn {
+    animation: .5s slideIn ease forwards;
+  }
+
+  @keyframes slideIn {
+    100% {
+      transform: translateY(0px);
+    }
+  }
 
   #layout-navbar {
     padding: 20px 50px;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-  }
-
-  .navbar-nav {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  }
-
-  .navbar-item {
-    a {
-    color: #333;
-    text-decoration: none;
     position: relative;
+    bottom: 0;
+    padding: 50px 50px 50px 100px;
+    margin-left: 100px;
+    box-shadow: 6px 6px 16px rgba(18, 18, 18, .3);
+    background-color: #fff;
 
-    &.nav-link.active {
-      font-weight: 700;
+    h4 {
+      font-weight: 200; 
+      font-size: 20px;
 
+      span {
+        font-weight: 700;
+      }
+    }
 
+    h3 {
+      grid-column: 1/-1;
+      font-weight: 400;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 25px;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    h2 {
+      padding: 5px 0 20px 0;
+      width: 500px;
+      font-size: 35px;
+    }
+    .navbar-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      list-style-type: none;
+      gap: 10px;
+    }
+
+    .navbar-item {
+      a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 200;  
+      font-size: 19px;
+    }
+  }
+
+  .left_nav, .right_nav {
+    .navbar-item {
+      margin: 10px;
+    }
+  }
+  }
+
+@media screen and (max-width: 950px) {
+  #layout-navbar {
+    margin-left: 0;
+
+    h2 {
+      font-size: 25px;
+      width: auto;
+    }
+
+    h3 {
+      font-size: 15px;
     }
   }
 }
 
-
 @media screen and (max-width: 700px) {
-
   .nav {
     position: relative;
     border-bottom: none;
+  }
+
+  #colorsNav, 
+  #fontsNav,
+  #cssTipNav {
+  display: none;
   }
 
   .nav #logo {
@@ -293,6 +309,14 @@ header {
     padding: 0px;
   }
 
+  .navbar-nav {
+    gap: 0px !important;
+  }
+
+  #layout-navbar {
+    padding: 30px;
+    margin-top: -50px;
+  }
   header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -324,5 +348,4 @@ header {
     font-size: 2em;
   }
 }
-
 }

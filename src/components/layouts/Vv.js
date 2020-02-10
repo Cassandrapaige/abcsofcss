@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Vv = () => {
     return (
@@ -17,10 +17,10 @@ const Vv = () => {
             fontstyle= 'normal'
             weight= '300'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = '::selection {'
+            method = 'background-color: #00C2B5; }'
+            link = 'https://codepen.io/cassandraPaige/pen/bGNMmga'
+            exp = 'The ::selection pseudo element is used to change the background color of highlighted text. You can simply attach it to the root of the document to apply the same background color to each element on the page, or add it to individual elements depending on your purpose. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

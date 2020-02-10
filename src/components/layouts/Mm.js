@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Mm = () => {
     return (
@@ -17,10 +17,10 @@ const Mm = () => {
             fontstyle= 'normal'
             weight= '400'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = '.container {'
+            method = 'position: sticky; }'
+            link = 'https://codepen.io/cassandraPaige/pen/oNgmbyx'
+            exp = 'Sticky positioning treats an elements as if were relatively positionend on the page until it reaches a certain threshold and "sticks" itself in position. It remains "stuck" to the page until it has scrolled through the containers remaining contents. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

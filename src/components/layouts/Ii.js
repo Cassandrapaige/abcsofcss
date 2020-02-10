@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Ii = () => {
     return (
@@ -8,19 +8,19 @@ const Ii = () => {
             <Layout
             letter = 'Ii'
 
-            primary = '#F64398'
-            secondary = '#8172F8'
-            complimentary = '#68BBDD'
-            contrast = '#4B9116'
+            primary = '#F2B441'
+            secondary = '#9A80BF'
+            complimentary = '#F2507B'
+            contrast = '#03A688'
 
             family = 'imperial-urw, sans-serif'
             fontstyle= 'normal'
             weight= '700'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = 'p::first-line {'
+            method = 'font-size: 40px; }'
+            link = 'https://codepen.io/cassandraPaige/pen/JjomyZJ'
+            exp = 'The ::first-line pseudo element will apply styles to the first line of a block-level element. Styles will adjust according to viewport size. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

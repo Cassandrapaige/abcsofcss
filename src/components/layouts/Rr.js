@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Rr = () => {
     return (
@@ -17,10 +17,10 @@ const Rr = () => {
             fontstyle= 'normal'
             weight= '700'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = 'input:checked {'
+            method = 'background-color: #04C4D9; }'
+            link = 'https://codepen.io/cassandraPaige/pen/povKvLr'
+            exp = 'The :checked pseudo-class targets radio buttons and checkboxes, applying styles to "active" elements. Check Mozilla for examples on how to use :checked to toggle an active class, depending on targets state. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

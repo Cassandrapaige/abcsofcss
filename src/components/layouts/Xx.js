@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Xx = () => {
     return (
@@ -8,19 +8,19 @@ const Xx = () => {
             <Layout
             letter = 'Xx'
 
-            primary = '#62CDD9'
-            secondary = '#F29BB2'
-            complimentary = '#0396A6'
-            contrast = '#F2AEBB'
+            primary = '#BF2E97'
+            secondary = '#2D39A1'
+            complimentary = '#F2C335'
+            contrast = '#05193A'
 
             family = 'xenera, sans-serif'
             fontstyle= 'normal'
             weight= '400'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = '.container {'
+            method = 'background: repeating-conic-gradient(); }'
+            link = 'https://codepen.io/cassandraPaige/pen/GRgGLoz'
+            exp = 'A conic-graident is used for creating pie charts or color wheels, which rotate around a center point. You can add multiple colours to your graident by using colour-stops, specified by an angle. Please note, that at this time, this example may only be available on Chrome. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

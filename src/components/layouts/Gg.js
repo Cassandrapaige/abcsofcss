@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Gg = () => {
     return (
@@ -17,10 +17,10 @@ const Gg = () => {
             fontstyle= 'normal'
             weight= '400'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = '.section {'
+            method = 'background-attachment: fixed; }'
+            link = 'https://codepen.io/cassandraPaige/pen/MWYGqvE'
+            exp = 'Here we have used background-attachment to crate a parallax scrolling effect, specifying that we would like our images position to be fixed to the page. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

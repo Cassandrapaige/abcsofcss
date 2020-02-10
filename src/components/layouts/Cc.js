@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Cc = () => {
     return (
@@ -8,19 +8,19 @@ const Cc = () => {
             <Layout
             letter = 'Cc'
             
-            primary = '#00B7DC'
-            secondary = '#FF90C4'
-            complimentary = '#FFF073'
-            contrast = '#DE88C8'
+            primary = '#D9296A'
+            secondary = '#020873'
+            complimentary = '#F2E74B'
+            contrast = '#F28F38'
 
             family = 'cantarell, sans-serif'
             fontstyle= 'normal'
             weight= '700'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = 'h1 {'
+            method = '-webkit-background-clip: text };'
+            link = 'https://codepen.io/cassandraPaige/pen/JjoypXB'
+            exp = 'Background-clip is used to clip an elements background to its surrounding border or content-box. In this case we have clipped it to the foreground text, which has allowed us to add a subtle animation to the texts background. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

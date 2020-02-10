@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Ff = () => {
     return (
@@ -17,10 +17,10 @@ const Ff = () => {
             fontstyle= 'normal'
             weight= '700'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = 'svg {'
+            method = 'fill: #F24141; }'
+            link = 'https://codepen.io/cassandraPaige/pen/ZEYRmjb'
+            exp = 'The fill property allows you to change the color of an SVG element. Hover over the example images and see how they change color. This would not be possible by just adding a background-color. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

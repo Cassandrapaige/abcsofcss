@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../boilerplates/Layout';
+import Layout from '../Layout';
 
 const Zz = () => {
     return (
@@ -8,19 +8,19 @@ const Zz = () => {
             <Layout
             letter = 'Zz'
 
-            primary = '#BE4269'
-            secondary = '#351835'
-            complimentary = '#D0B651'
-            contrast = '#6D184A'
+            primary = '#5BD9D9'
+            secondary = '#D91A4D'
+            complimentary = '#260104'
+            contrast = '#F2C4E2'
 
             family = 'zebrawood-std-fill, sans-serif'
             fontstyle= 'normal'
             weight= '400'
 
-            selector = '.btn'
-            method = '::before { content: " ";'
-            link = 'https://twitter.com/CassandraPaigee'
-            exp = '::before is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). While the end result is not actually in the DOM, it appears on the page as if it is.'
+            selector = '::before { '
+            method = "content: ' '; }"
+            link = 'https://codepen.io/cassandraPaige/pen/QWwrzbN'
+            exp = 'The ::before and ::after psuedo selectors allow you to render elements to the page using CSS, and position them relevant to their parent element. These elements are not visible in the DOM tree, however they appear on the page as if they were. Do further research and find a way to include it in your website.'
             />
         </div>
         </>
