@@ -13,7 +13,7 @@ const Aa = () => {
             complimentary = '#88BFB5'
             contrast = '#F2E527'
 
-            family = 'upgrade, sans-serif'
+            family = 'alfarn, sans-serif'
             fontstyle= 'normal'
             weight= '700'
 

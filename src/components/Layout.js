@@ -19,7 +19,7 @@ class Layout extends Component {
     }
     
     handleScrollChange = () => {
-        const isPassedTop = window.pageYOffset  > 700;
+        const isPassedTop = window.pageYOffset  > 900;
         if (this.state.showNav && isPassedTop) {
           this.setState({ 
               showNav: false

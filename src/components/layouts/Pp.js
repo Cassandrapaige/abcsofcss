@@ -13,7 +13,7 @@ const Pp = () => {
             complimentary = '#011C40'
             contrast = '#D9779B'
 
-            family = 'aralucent, sans-serif'
+            family = 'peachy-keen-jf, sans-serif'
             fontstyle= 'normal'
             weight= '400'
 

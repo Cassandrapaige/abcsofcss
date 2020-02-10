@@ -13,7 +13,7 @@ const Uu = () => {
             complimentary = '#D9A566'
             contrast = '#8F94A6'
 
-            family = 'alfarn, sans-serif'
+            family = 'upgrade, sans-serif'
             fontstyle= 'normal'
             weight= '400'
             
