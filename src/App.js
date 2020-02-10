@@ -29,34 +29,53 @@ import Xx from './components/layouts/Xx'
 import Yy from './components/layouts/Yy'
 import Zz from './components/layouts/Zz'
 
+/* Receives keypress event.key to create URL : /Aa, /Bb */
+const repeat = (letter) => {
+  let letters = letter.repeat(2);
+  let [ upper, lower ] = [ letters[0].toUpperCase(), letters[1] ];
+  return `${ upper }${ lower }`;
+}
+
 class App extends Component {
-  state = {
-    location: '/'
+  constructor(props) {
+    super(props);
+     this.state = {
+      location: null
+    }
+  }
+
+  componentDidMount = () => {
+    this.setState({
+      location: '/'
+    })
+  }
+      
+  onKeypress = (e) => {
+    let regEx  = /[a-zA-Z]/.test(e.key);
+    let location = `/${(repeat(e.key))}`;
+
+    if (e.key.length < 2 && regEx ) { 
+      this.setState({
+        location: location
+      })
+    }
+  };
+
+  componentDidMount = () => {
+    document.addEventListener('keypress', this.onKeypress, true);
+  }
+
+  componentWillUnmount = () => {
+    document.removeEventListener('keypress', this.onKeypress);
   }
 
   render() {
 
-  const repeat = (elem) => {
-    let el = elem.repeat(2);
-    let [x, y] = [el[0].toUpperCase(),el[1]];
-    return `${x}${y}`;
-  }
-      
-  const onKeypress = (e) => {
-      if(e.key.length < 2 && /[a-zA-Z]/.test(e.key)) {
-      let location = `/${(repeat(e.key))}`;
-       this.setState({
-         location: location
-       })
-      }
-  };
-      
-  window.addEventListener('keypress', onKeypress);
   return (
       <Router>
-          <Fragment>
+        <Fragment>
           <div className="container"> 
-          <Redirect to = {this.state.location} />
+          <Redirect to = { this.state.location } />
         <Switch>
           <Route exact path= '/' component = { Aa }/>
           <Route exact path= '/Aa' component = { Aa }/>
@@ -88,7 +107,7 @@ class App extends Component {
         </Switch>
             
         </div>
-        </Fragment>
+      </Fragment>
     </Router>
   );
 }
