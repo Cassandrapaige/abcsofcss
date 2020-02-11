@@ -20,7 +20,7 @@ const Aa = () => {
             selector = ':nth-of-type(1) {'
             method = 'background: #D96AA7; }'
             link = 'https://codepen.io/cassandraPaige/pen/NWPOwXy'
-            exp = 'The :nth-f-type selector allows you to use numbers, keywords and formulas to target specific elements based on their position in the DOM tree. Do further research and find a way to include it in your website.'
+            exp = 'The :nth-of-type selector allows you to use numbers, keywords and formulas to target specific elements based on their position in the DOM tree. Do further research and find a way to include it in your website.'
             />
         </div>
         </>
