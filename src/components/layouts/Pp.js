@@ -20,7 +20,7 @@ const Pp = () => {
             selector = 'input:focus {'
             method = 'outline: 2px solid #4D8A77; }'
             link = 'https://codepen.io/cassandraPaige/pen/QWwrZxZ'
-            exp = 'The :focus pseudo-class is used on form elements to apply styles when a user clicks on an input field. Do further research and find a way to include it in your website.'
+            exp = 'The :focus pseudo-class is used on form elements to apply styles when a user clicks on an input field. You can use focus on almost any element by setting a tabindex attribute. Do further research and find a way to include it in your website.'
             />
         </div>
         </>

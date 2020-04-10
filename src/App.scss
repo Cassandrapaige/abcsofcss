@@ -184,8 +184,8 @@ header {
 
   .navigation {
     padding: 100px 0;
-    transform: translateY(-500px);
-    transition: all .5s ease;
+    transform: translateY(-250px);
+    transition: all .5s ease-in;
   }
 
   .nav_slideIn {
