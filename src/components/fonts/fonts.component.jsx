@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './fonts.styles.scss'
+
 export const Fonts = (props) => {
     return (
         <>

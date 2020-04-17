@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './color.styles.scss'
+
 const Colors = (props) => {
     return (
         <>

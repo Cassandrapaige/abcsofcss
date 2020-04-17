@@ -1,0 +1,26 @@
+#fonts {
+    min-height: 100vh;
+    margin-top: 100px;
+    padding: 100px 0px;
+    color: #fff;
+  }
+
+  
+  #fonts h3 {
+    font-size: 3.5em;
+    padding: 50px;
+  }
+  
+  #fonts h3:nth-of-type(even) {
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+  }
+
+  @media screen and (max-width: 700px) {
+    #fonts {
+      margin-top: 20px;
+       h3 {
+      font-size: 2em;
+    }
+  }
+  }

@@ -1,6 +1,7 @@
 import React, { Fragment, Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 
+import Homepage from './components/homepage/homepage.component'
 import './App.scss';
 import Aa from './components/layouts/Aa'
 import Bb from './components/layouts/Bb'
@@ -32,7 +33,7 @@ import Zz from './components/layouts/Zz'
 /* Receives keypress event.key to create URL : /Aa, /Bb */
 const repeat = (letter) => {
   let letters = letter.repeat(2);
-  let [ upper, lower ] = [ letters[0].toUpperCase(), letters[1] ];
+  let [ upper, lower ] = [ letters[0].toUpperCase(), letters[1]];
   return `${ upper }${ lower }`;
 }
 
@@ -77,7 +78,7 @@ class App extends Component {
           <div className="container"> 
           <Redirect to = { this.state.location } />
         <Switch>
-          <Route exact path= '/' component = { Aa }/>
+          <Route exact path= '/' component = { Homepage }/>
           <Route exact path= '/Aa' component = { Aa }/>
           <Route exact path= '/Bb' component = { Bb }/>
           <Route exact path= '/Cc' component = { Cc }/>

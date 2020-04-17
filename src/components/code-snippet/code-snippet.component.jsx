@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './code-snippet.styles.scss'
+
 const Codesnippet = (props) => {
     return (
         <>
